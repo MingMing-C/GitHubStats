@@ -55,6 +55,7 @@ jobs:
     # Commit all changed files to the repository
     - name: Commit to the repo
       run: |
+        git pull
         git config --global user.name "MingMing-C"
         git config --global user.email "mingmingc@mail.com"
         git add .
